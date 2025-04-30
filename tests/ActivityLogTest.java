@@ -1,11 +1,13 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.*;
+
 public class ActivityLogTest {
+
     @Test
-    void testAddActivity() {
-        ActivityLog log = new ActivityLog();
-        log.addActivity("Login");
-        assertTrue(log.getActivities().contains("Login"));
+    public void testActivityType() {
+        ActivityLog log = new ActivityLog("Download", "2024-12-01");
+        assertEquals("Download", log.getActivityType());
     }
 }
