@@ -1,11 +1,14 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.*;
+
 public class AccountTest {
+
     @Test
-    void testAccount() {
-        Account acc = new Account("A001", "Paul");
-        assertEquals("A001", acc.getAccountNumber());
-        assertEquals("Paul", acc.getCustomerName());
+    public void testAccountBalance() {
+        Account acc = new Account();
+        acc.setBalance(500);
+        assertEquals(500, acc.getBalance());
     }
 }
