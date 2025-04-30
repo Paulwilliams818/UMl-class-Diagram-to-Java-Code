@@ -1,0 +1,13 @@
+{
+  "name": "financial-system",
+  "version": "1.0.0",
+  "description": "Financial scenario test suite",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
